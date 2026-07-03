@@ -1,0 +1,18 @@
+[project]
+name = "mouse-jiggler"
+version = "2.0.0"
+description = "Plattformunabhängiger Mouse Jiggler mit systemnahen APIs (SendInput/CGEvent)"
+requires-python = ">=3.8"
+dependencies = [
+    "pyobjc-framework-Quartz>=9.0; platform_system == 'Darwin'",
+]
+
+[project.scripts]
+mouse-jiggler = "mouse_jiggler:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+dev-dependencies = []
