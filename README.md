@@ -66,6 +66,7 @@ Built with system-level APIs:
     
     # macOS: Install dependency
     uv pip install pyobjc-framework-Quartz
+    brew install cliclick
     
     # Test and run
     python mouse_jiggler.py --test
